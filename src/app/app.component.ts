@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  selectedImage = "../../assets/images/000001.jpg";
+
+  onSelectedImage(image: string){
+    this.selectedImage = "../../assets/images/" + image + ".jpg";
+  }
 }

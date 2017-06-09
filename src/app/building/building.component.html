@@ -1,0 +1,22 @@
+<table class="table table-bordered buildingTable">
+  <thead>
+    <tr>
+      <th>Strata Plan Number</th>
+      <th>Building Display</th>
+      <th>Postcode</th>
+      <th>Local Government</th>
+      <th>Lots</th>
+      <th>Strata Manager</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let b of buildingData" (click)="changeSelectedImage(b.id)" style="cursor: pointer">
+      <td>{{b.strataplannumber}}</td>
+      <td>{{b.buildingdisplay}}</td>
+      <td>{{b.postcode}}</td>
+      <td>{{b.localgovernment}}</td>
+      <td>{{b.numberfflots}}</td>
+      <td>{{b.stratamanager}}</td>
+    </tr>
+  </tbody>
+</table>
